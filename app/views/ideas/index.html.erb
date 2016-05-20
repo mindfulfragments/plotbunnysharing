@@ -1,2 +1,9 @@
 <h1>PLOT BUNNY SHARING</h1>
-<p><%= @idea.inspect %></p>
+<% @ideas.each do |idea| %> 
+  <div>
+    <h2><%= idea.title %></h2>
+    <i><%= idea.summary %></i>
+  </div>
+
+  <hr />
+<% end %>
