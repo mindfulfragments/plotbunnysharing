@@ -14,6 +14,10 @@ class IdeasController < ApplicationController
     redirect_to root_path
   end
 
+  def show 
+    @idea = Idea.find(params[:id])
+  end
+
   private
 
 # This method sucks in the values from the form 

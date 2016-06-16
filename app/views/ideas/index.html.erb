@@ -1,7 +1,7 @@
 <h1>ALL STORY IDEAS</h1>
 <% @ideas.each do |idea| %> 
   <div>
-    <h2><%= idea.title %></h2>
+    <h1><%= link_to idea.title, idea_path(idea) %></h1><br />
     <i><%= idea.summary %></i>
   </div>
 
