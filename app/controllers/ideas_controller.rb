@@ -18,6 +18,10 @@ class IdeasController < ApplicationController
     @idea = Idea.find(params[:id])
   end
 
+  def edit
+    @idea = Idea.find(params[:id])
+  end
+
   private
 
 # This method sucks in the values from the form 

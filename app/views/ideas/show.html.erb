@@ -3,13 +3,13 @@
 <p><%= @idea.title %></p>
 <h1>SUMMARY:</h1>
 <i><%= @idea.summary %></i>
-<br/><br/>
 <h1>PLOT:</h1>
 <p><%= @idea.plot %></p>
-<br /><br />
 <h1>CHARACTERS:</h1>
 <p><%= @idea.characters %></p>
-<br /><br />
 <h1>NOTES:</h1>
 <p><%= @idea.notes %></p>
+<div class="pull-left">
+    <%= link_to 'Edit', edit_idea_path(@idea), class: 'btn btn-primary' %>
+  </div>
 </div>
